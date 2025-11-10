@@ -1,39 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1500px" height="500px" viewBox="0 0 1500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="200" height="60" viewBox="0 0 200 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <title>IntelliRAG Logo White</title>
     <defs>
         <linearGradient id="grad1-white" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#818CF8;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#A78BFA;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#C4B5FD;stop-opacity:1" />
         </linearGradient>
         <linearGradient id="grad2-white" x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style="stop-color:#60A5FA;stop-opacity:1" />
-            <stop offset="100%" style="stop-color:#818CF8;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#93C5FD;stop-opacity:1" />
         </linearGradient>
     </defs>
-    <g id="logo-group" transform="translate(67, 129)">
-        <rect fill-opacity="0" x="0" y="0" width="1500" height="500"/>
+    
+    <!-- Logo Icon -->
+    <g id="icon" transform="translate(5, 5)">
+        <circle cx="25" cy="25" r="23" fill="url(#grad1-white)" opacity="0.95"/>
         
-        <!-- Logo Icon -->
-        <g id="icon" transform="translate(50, 100) scale(3)">
-            <circle cx="40" cy="25" r="6" fill="url(#grad1-white)"/>
-            <circle cx="20" cy="42.5" r="6" fill="url(#grad1-white)"/>
-            <circle cx="60" cy="42.5" r="6" fill="url(#grad1-white)"/>
-            <circle cx="40" cy="60" r="6" fill="url(#grad1-white)"/>
-            
-            <path d="M40 25 L20 42.5 L40 60 L60 42.5 Z" fill="none" stroke="url(#grad2-white)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <line x1="40" y1="25" x2="40" y2="60" stroke="url(#grad2-white)" stroke-width="4" stroke-linecap="round"/>
-            <line x1="20" y1="42.5" x2="60" y2="42.5" stroke="url(#grad2-white)" stroke-width="4" stroke-linecap="round"/>
-            
-            <circle cx="40" cy="12" r="3.5" fill="#93C5FD" opacity="0.9"/>
-            <circle cx="10" cy="42.5" r="3.5" fill="#93C5FD" opacity="0.9"/>
-            <circle cx="70" cy="42.5" r="3.5" fill="#93C5FD" opacity="0.9"/>
-            <circle cx="40" cy="73" r="3.5" fill="#93C5FD" opacity="0.9"/>
+        <!-- Neural network nodes -->
+        <g fill="#ffffff">
+            <circle cx="25" cy="20" r="2" opacity="0.95"/>
+            <circle cx="19" cy="28" r="1.5" opacity="0.9"/>
+            <circle cx="31" cy="28" r="1.5" opacity="0.9"/>
+            <circle cx="25" cy="34" r="1.5" opacity="0.9"/>
+            <circle cx="16" cy="22" r="1.2" opacity="0.8"/>
+            <circle cx="34" cy="22" r="1.2" opacity="0.8"/>
         </g>
         
-        <!-- IntelliRAG Text -->
-        <g id="text" transform="translate(420, 174)">
-            <text x="0" y="100" font-family="Inter, Arial, sans-serif" font-size="120" font-weight="700" fill="#FFFFFF">IntelliRAG</text>
+        <!-- Connections -->
+        <g stroke="#ffffff" stroke-width="1.2" fill="none" opacity="0.5">
+            <line x1="25" y1="20" x2="19" y2="28"/>
+            <line x1="25" y1="20" x2="31" y2="28"/>
+            <line x1="19" y1="28" x2="25" y2="34"/>
+            <line x1="31" y1="28" x2="25" y2="34"/>
         </g>
+        
+        <!-- Search icon -->
+        <g transform="translate(25, 25)">
+            <circle cx="0" cy="-3" r="6" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+            <line x1="3.5" y1="1" x2="7" y2="4.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" opacity="0.9"/>
+        </g>
+        
+        <circle cx="25" cy="25" r="23" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.3"/>
+    </g>
+    
+    <!-- IntelliRAG Text (White version) -->
+    <g id="text" transform="translate(60, 30)">
+        <text font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">
+            <tspan x="0" y="0" fill="url(#grad2-white)">intelli</tspan><tspan fill="#FFFFFF">RAG</tspan>
+        </text>
     </g>
 </svg>
